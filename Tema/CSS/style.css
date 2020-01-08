@@ -1,0 +1,492 @@
+/* Pré Formatação */
+body{
+    margin: 0;
+    font: 1em normal 'Amiri', serif;
+}
+
+.alinhar_centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'Righteous', cursive;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.titulo:before, .titulo:after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: currentColor;
+    display: block;
+}
+
+.sub_titulo{
+    font-family: 'Righteous', cursive;
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sub_titulo:before, .sub_titulo:after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: currentColor;
+    display: block;
+}
+
+.btn{
+    width: 220px;
+    height: 50px;
+    padding-top: 12.5px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    background: url('../img/efeito_btn_branco.svg') center no-repeat;
+    background-size: cover;
+    background-color: #5AC4FF;
+    display: block;
+}
+
+form .btn{
+    padding-bottom: 10px;
+    border: none;
+}
+
+.rosa{
+    background-color: #E755F0;
+}
+
+a{
+    cursor: pointer;
+    color: inherit;
+}
+
+.ativo{
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: #F8C0FF;
+}
+
+/* INICIO HOME */
+
+/* Cabeçalho */
+
+header{
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(190, 223, 238);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+header .container>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_navegacao ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu_navegacao ul li{
+    margin-left: 20px;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    display: inline-block;
+}
+
+.menu_navegacao ul li:hover{
+    text-decoration: underline;
+    color: #F8C0FF;
+}
+
+/* Introdução Home*/
+
+.intro_home{
+    margin-top: 80px;
+    max-width: 100vw;
+    height: 380px;
+    background: url('../img/Bg-introdução.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.intro_home .container{
+    height: 100%;
+}
+
+.intro_home .container>div:nth-child(1){
+    height: 100%;
+    top: 30px;
+}
+
+.apresentacao_intro{
+    height: 220px;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quem_sou{
+    max-width: 100vw;
+    min-height: 1020px;
+}
+
+.quem_sou>.container{
+    min-height: 900px;
+    flex-direction: column;
+}
+
+.quem_sou .infos{
+    margin-top: 7px;
+    min-height: 370px;
+    align-items: flex-end;
+}
+
+.linhas{
+    position: absolute;
+    top: 298px;
+}
+
+.informacao{
+    height: 280px;
+    padding: 0 10px;
+    background-color: rgba(190, 223, 238, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacao_central{
+    height: 370px;
+    padding: 0 10px;
+    background-color: rgba(190, 223, 238, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_info{
+    min-height: 150px;
+    margin-top: 10px;
+}
+
+.texto_info_central{
+    min-height: 240px;
+    margin-top: 10px;
+}
+
+/* Produtos */
+
+.produtos_home{
+    max-width: 100vw;
+    min-height: 1150px;
+    font-size: 1.2em;
+    background-color: rgba(190, 223, 238, 0.5);
+}
+
+.produtos_home>.container{
+    min-height: 1030px;
+    flex-direction: column;
+}
+
+.coluna{
+    min-height: 720px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primeiraC{
+    width: 660px;
+}
+
+.segundaC{
+    width: 300px;
+}
+
+.foto_produto{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    margin-block-start: 0;
+    margin-block-end: 20px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.pequena{
+    height: 170px;
+}
+
+.media{
+    height: 360px;
+}
+
+.grande_larga{
+    height: 340px;
+}
+
+.grande_cumprida{
+    height: 530px;
+}
+
+.foto_produto img{
+    width: 100%;
+    height: 100%;
+}
+
+.foto_produto h3{
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(232, 85, 240, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+}
+
+.pequena h3{
+    background-color: rgba(90, 197, 255, 0.5);
+}
+
+.chamada_de_acao .btn{
+    margin: 20px auto 0;
+}
+
+/* Posts Recentes */
+
+.posts_recentes{
+    max-width: 100vw;
+    min-height: 830px;
+    flex-direction: column;
+}
+
+.posts_recentes>.container{
+    min-height: 710px;
+    flex-direction: column;
+}
+
+.post{
+    width: 220px;
+    height: 460px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_post{
+    margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tumb{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.tumb img{
+    width: 100%;
+    height: 100%;
+}
+
+.tumb h3{
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(90, 197, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+}
+
+.legenda_impar{
+    background-color: rgba(232, 85, 240, 0.5)!important;
+}
+
+.descricao_post{
+    width: 100%;
+    height: 180px;
+    background-color: #E755F0;
+    color: #fff;
+}
+
+.descricao_impar{
+    background-color: #5AC4FF;
+}
+
+.descricao_post p{
+    margin: 10px 0 0 20px;
+    width: 180px;
+    height: 160px;
+}
+
+/* Footer */
+
+footer{
+    max-width: 100vw;
+    background-color: rgba(190, 223, 238, 0.5);
+}
+
+footer .container{
+    padding-right: 10px;
+    min-height: 200px;
+}
+
+footer .container>div{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer h3{
+    margin: 30px 0 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+footer a{
+    text-align: center;
+}
+
+footer li{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.links_sociais{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer>div:nth-child(2){
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+footer>div:nth-child(2) p{
+    font-weight: bold;
+}
+
+.texto_rosa{
+    color: #E755F0;
+}
+
+.texto_azul{
+    color: #5AC4FF;
+}
+
+/* Introdução Páginas externas */
+
+.introducao{
+    max-width: 100vw;
+    height: 130px;
+    margin-top: 80px;
+    color: #ffffff;
+    background-color: #E755F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* JavaScript Slide */
+
+.js [data-slide]{
+    position: relative;
+}
+
+.js [data-slide]>*{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+
+.js [data-slide]>.active{
+    position: relative;
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.js [data-slide-nav] {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.js [data-slide-nav] > button {
+    display: inline-block;
+    width: 12px;
+    margin: 4px;
+    height: 12px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    background: #5AC4FF;
+    text-indent: -100px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.js [data-slide-nav] > button.active {
+    background: #E755F0;
+}  

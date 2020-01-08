@@ -1,0 +1,86 @@
+/* Página Contato */
+/* Dados contato */
+.dados_contato{
+    min-height: 330px;
+    background-color: rgba(190, 223, 238, 0.5);
+}
+
+.dados_contato .container>div{
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dados_contato h3{
+    margin: 30px 0 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.dados_contato div:nth-child(2) img{
+    width: 100%;
+}
+
+.dados_contato ul li{
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #F8C0FF;
+}
+
+.dados_contato ul li:nth-child(odd){
+    color: #fff;
+	background-color: #A0C2EB;
+}
+
+/* Formulário */
+
+.enviar_mensagem{
+    max-width: 100vw;
+    height: 890px;
+}
+
+.enviar_mensagem .container{
+    height: 770px;
+    flex-direction: column;
+}
+
+.enviar_mensagem form{
+    height: 640px;
+    padding: 60px;
+    background-color: #5AC4FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enviar_mensagem form label{
+    margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    display: block;
+}
+
+.enviar_mensagem form input{
+    width: 340px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(248, 192, 255, 0.5);
+}
+
+.enviar_mensagem textarea{
+    width: 340px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(248, 192, 255, 0.5);
+}

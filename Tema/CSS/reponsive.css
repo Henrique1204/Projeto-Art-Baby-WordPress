@@ -1,0 +1,205 @@
+/* Modelo Tablet */
+
+@media  only screen and (max-width: 979px){
+    
+    /* Texto Geral */
+    
+    p, li, a{
+        font-size: 1em!important;
+    }
+
+    .titulo{
+        font-size: 1.4em;
+    }
+
+    .sub_titulo{
+        font-size: 1.2em;
+    }
+
+    body * h3{
+        font-size: 1.1em;
+    }
+
+    .btn{
+        width: 180px;
+        height: 40px;
+        padding-top: 8.5px;
+        background-size: 100%;
+    }
+
+    /* Introdução Home */
+
+    .intro_home{
+        background: url('../img/Bg-introdução-tablet.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    .intro_home .container>div:nth-child(2){
+        height: 100%;
+        top: 30px;
+    }
+
+    .reversa{
+        flex-direction: column-reverse;
+    }
+
+    /* Quem sou home */
+
+    .linhas{
+        display: none;
+    }
+
+    /* Produtos Home */
+
+    .primeiraC{
+        width: 528px;
+    }
+
+    .segundaC{
+        width: 240px;
+    }
+
+    /* Post recentes */
+
+    .posts_recentes .ultimos{
+        display: none;
+    }
+
+    /* Produtos */
+
+    .produto_pedido label{
+        font-size: 1em;
+    }
+}
+
+/* Modelo celular */
+
+@media  only screen and (max-width: 787px){
+
+    /* Geral */
+
+    header, section{
+        padding: 30px 0;
+    }
+    
+    .chamada_de_acao{
+        text-align: center;
+    }
+
+    /* Header */
+
+    header{
+        height: 160px;
+    }
+    
+    /* introdução Home */
+
+    .intro_home{
+        margin-top: 160px;
+        background: url('../img/Bg-introdução-mobile.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    header .container div{
+        margin-bottom: 20px;
+    }
+
+    .intro_home .container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro_home .container>div:nth-child(2){
+        display: none;
+    }
+    
+    /* Introdução geral */
+
+    .introducao{
+        margin-top: 160px;
+    }
+
+    /* Produtos Home */
+
+    .segundaC{
+        display: none;
+    }
+
+    .portfolio{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Quem Sou */
+
+    .quem_sou *{
+        margin: 20px 0;
+    }
+
+    .quem_sou .infos{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* Footer */
+
+    footer{
+        padding-top: 30px;
+    }
+
+    footer .container> *{
+        border-bottom: 2px solid #000;
+        margin: 0 auto 20px;
+    }
+
+    footer .container>div:nth-child(2){
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    footer>div:nth-child(2){
+        height: auto;
+    }
+
+    /* Página Produtos */
+
+    .materias .ultimos{
+        display: none;
+    }
+
+    .pedido> *{
+        margin-top: 20px;
+    }
+
+    .pedido form> *{
+        margin-top: 20px;
+    }
+
+    .dados_pedidos>div{
+        width: 260px;
+        padding: 20px 0;
+    }
+
+    .produto_pedido label{
+        width: 140px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .pedido form input{
+        width: 100%;
+    }
+
+    /* Página Contato */
+
+    .dados_contato .container>div{
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .enviar_mensagem form input, .enviar_mensagem textarea{
+        width: 260px;
+    }
+}
