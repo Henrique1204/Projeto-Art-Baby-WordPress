@@ -1,6 +1,6 @@
 <footer>
         <div class="container">
-            <a class="grid-3">
+            <a href="/" class="grid-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo-marca.svg" alt="Logo marca da empresa">
             </a>
             <div class="grid-4">

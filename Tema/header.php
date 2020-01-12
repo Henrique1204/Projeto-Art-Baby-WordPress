@@ -21,15 +21,15 @@
     <header class="alinhar_centro">
         <div class="container">
             <div class="grid-3">
-                <a href="index.html">
+                <a href="/">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo-marca.svg" alt="Logo marca da empresa">
                 </a>
             </div>
             <nav class="menu_navegacao">
                 <ul class="grid-10">
-                    <li><a href="produtos.html" class="caminho_menu">Produtos</a></li>
-                    <li><a href="contato.html" class="caminho_menu">Contato</a></li>
-                    <li><a href="blog.html" class="caminho_menu">Blog</a></li>
+                    <li><a href="/produto" class="caminho_menu">Produtos</a></li>
+                    <li><a href="/contato" class="caminho_menu">Contato</a></li>
+                    <li><a href="/blog" class="caminho_menu">Blog</a></li>
                 </ul>
             </nav>
         </div>

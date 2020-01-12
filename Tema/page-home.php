@@ -1,16 +1,19 @@
-    <?php get_header(); ?>
+<?php
+	// Template Name: Home
+    get_header();
+?>
     <section class="intro_home">
         <div class="container">
             <div>
                 <div class="apresentacao_intro grid-8">
                     <h1 class="titulo">Bebês Reborn</h1>
                     <p>Tenha seu próprio bebê reborn e itens personalizados feitos sob encomenda.</p>
-                    <a href="produtos.html" class="btn">Encomendar bebê</a>
+                    <a href="/produto" class="btn">Encomendar bebê</a>
                 </div>
             </div>
             <div>
                 <div class="apresentacao_intro reversa grid-8">
-                    <a href="produtos.html" class="btn rosa">Encomendar item</a>
+                    <a href="/produto" class="btn rosa">Encomendar item</a>
                     <p>Encomende o enxoval do seu bebê totalmente personalizado.</p>
                     <h2 class="titulo">Itens de artesanato</h2>
                 </div>
@@ -152,7 +155,7 @@
             </div>
             <div class="chamada_de_acao">
                 <p>Clique no botão para ir para ver mais trabalhos.</p>
-                <a class="btn">Produtos</a>
+                <a href="/produto" class="btn">Produtos</a>
             </div>
         </div>
     </section>
@@ -211,7 +214,7 @@
             </div>
             <div class="chamada_de_acao">
                 <p>Clique no botão para mais posts.</p>
-                <a class="btn">Blog</a>
+                <a href="/blog" class="btn">Blog</a>
             </div>
         </div>
     </section>
