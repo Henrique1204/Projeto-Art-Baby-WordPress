@@ -7,8 +7,8 @@ Description: Tema criado para a Art Baby
 Version: 1.0
 */
 
-@import 'CSS/reset.css';
 @import 'CSS/normalize.css';
+@import 'CSS/reset.css';
 @import 'CSS/grid.css';
 @import 'CSS/contato.css';
 @import 'CSS/produtos.css';
@@ -167,6 +167,8 @@ header .container>div{
     justify-content: space-between;
     align-items: center;
 }
+
+/* Quem Sou */
 
 .quem_sou{
     max-width: 100vw;

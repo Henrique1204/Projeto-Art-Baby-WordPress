@@ -2,9 +2,8 @@
 	// Template Name: Contato
     get_header();
 ?>
-    <section class="introducao">
-        <h1 class="titulo">Contato</h1>
-    </section>
+<?php if(have_posts()): while(have_posts()): the_post();?>
+    <?php include(TEMPLATEPATH.'/inc/introducao.php'); ?>
     <section class="dados_contato">
         <div class="container">
             <div class="grid-4">
@@ -61,4 +60,5 @@
             </form>
         </div>
     </section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>

@@ -1,10 +1,9 @@
 <?php
-	// Template Name: Produto
+	// Template Name: Produtos
     get_header();
 ?>
-    <section class="introducao">
-        <h1 class="titulo">Produtos</h1>
-    </section>
+<?php if(have_posts()): while(have_posts()): the_post();?>
+    <?php include(TEMPLATEPATH.'/inc/introducao.php'); ?>
     <section class="produtos_produtos alinhar_centro">
         <div class="container">
             <div>
@@ -190,4 +189,5 @@
                 <button type="submit" class="btn">Fazer pedido</button>
             </form>
         </section>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>
