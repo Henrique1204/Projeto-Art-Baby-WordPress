@@ -8,14 +8,14 @@
             <div>
                 <div class="apresentacao_intro grid-8">
                     <h1 class="titulo">Bebês Reborn</h1>
-                    <p>Tenha seu próprio bebê reborn e itens personalizados feitos sob encomenda.</p>
+                    <p><?php the_field('apresentacao_um'); ?></p>
                     <a href="/produto" class="btn">Encomendar bebê</a>
                 </div>
             </div>
             <div>
                 <div class="apresentacao_intro reversa grid-8">
                     <a href="/produto" class="btn rosa">Encomendar item</a>
-                    <p>Encomende o enxoval do seu bebê totalmente personalizado.</p>
+                    <p><?php the_field('apresentacao_dois'); ?></p>
                     <h2 class="titulo">Itens de artesanato</h2>
                 </div>
             </div>
@@ -24,20 +24,20 @@
     <section class="quem_sou alinhar_centro">
         <div class="container">
             <h2 class="titulo">Quem sou?</h2>
-            <img src="img/Ícones/ícone interrogacao.svg" alt="Ponto de interrogação" class="grid-6">
-            <img src="img/Ícones/linhas_interrogacao.svg" alt="Linhas apontando para as informações" class="linhas">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/ícone interrogacao.svg" alt="Ponto de interrogação" class="grid-6">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/linhas_interrogacao.svg" alt="Linhas apontando para as informações" class="linhas">
             <div class="container infos">
                 <div class="informacao grid-5">
                     <h3 class="sub_titulo">Meu Objetivo</h3>
-                    <p class="texto_info">Meu objetivo é poder realizar os desejos das pessoas que assim como eu querem ter um bebê reborn, ou de terem enxoval com cada detalhe pensado  em seu filho.</p>
+                    <p class="texto_info"><?php the_field('meu_objetivo'); ?></p>
                 </div>
                 <div class="informacao_central grid-6">
                     <h3 class="sub_titulo">Minha história</h3>
-                    <p class="texto_info_central">História história história história história história história história história história história história história história história história história história história história história história história história história história história história história história história história história  história história história história história história história história história história história história história história história </p>
+                    <p class="texto_info_central"><?php the_field('minha_historia'); ?></p>
                 </div>
                 <div class="informacao grid-5">
                     <h3 class="sub_titulo">Como trabalho</h3>
-                    <p class="texto_info">A partir do primeiro contato com o cliente começo a procurar saber melhor quais os gostos e desejos do mesmo, sempre buscando entregar o melhor produto possível, e que consiga realizar os desejos dos clientes.</p>
+                    <p class="texto_info"><?php the_field('como_trabalho'); ?></p>
                 </div>
             </div>
         </div>
