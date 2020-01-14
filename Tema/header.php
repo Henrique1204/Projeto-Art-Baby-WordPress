@@ -13,6 +13,7 @@
     <script>document.documentElement.classList.add('js')</script>
     <script src="JS/simple-slide.js" defer></script>
     <script src="JS/script.js" defer></script>
+    <script src="JS/funcoes.js" defer></script>
     <title>Art baby - Bebês Reborn e Artesanato para enxoval</title>
     <!-- Header WP -->
     <?php wp_head(); ?>
