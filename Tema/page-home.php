@@ -49,35 +49,36 @@
                 <p>Aqui você encontra alguns de nossos produtos.</p>
             </div>
             <div  data-slide="produtos_home">
+            <?php if(have_rows('imagens_portfolio')): while(have_rows('imagens_portfolio')): the_row(); ?>
                 <div class="container portfolio">
                     <div class="coluna primeiraC">
                         <div class="grid-5">
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto-280x170.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_um'); ?>" alt="<?php the_sub_field('alt_um'); ?>">
                                 <figcaption>
-                                    <h3>Bebê reborn</h3>
+                                    <h3><?php the_sub_field('nome_um'); ?></h3>
                                 </figcaption>
                             </figure>
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto-280x170.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_dois'); ?>" alt="<?php the_sub_field('alt_dois'); ?>">
                                 <figcaption>
-                                    <h3>Bebê reborn</h3>
+                                    <h3><?php the_sub_field('nome_dois'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-6">
                             <figure class="foto_produto media">
-                                <img src="img/produtos/porduto2-340x360.jpg" alt="Imagem de um porta fraulda artesanal">
+                                <img src="<?php the_sub_field('imagem_tres'); ?>" alt="<?php the_sub_field('alt_tres'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Artesanato</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_tres'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-11">
                             <figure class="foto_produto grande_larga">
-                                <img src="img/produtos/produto-640x340.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_quatro'); ?>" alt="<?php the_sub_field('alt_quatro'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê reborn</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_quatro'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
@@ -85,74 +86,23 @@
                     <div class="coluna segundaC">
                         <div class="grid-5">
                             <figure class="foto_produto grande_cumprida">
-                                <img src="img/produtos/produto-280x530.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_cinco'); ?>" alt="<?php the_sub_field('alt_cinco'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê reborn</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_cinco'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-5">
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto2-280x170.jpg" alt="Imagem de um kit de artesanato">
+                                <img src="<?php the_sub_field('imagem_seis'); ?>" alt="<?php the_sub_field('alt_seis'); ?>">
                                 <figcaption>
-                                    <h3>Bebê reborn</h3>
+                                    <h3><?php the_sub_field('nome_seis'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
-                <div class="container portfolio">
-                    <div class="coluna primeiraC">
-                        <div class="grid-5">
-                            <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto2-280x170.jpg" alt="Imagem de um kit de artesanato">
-                                <figcaption>
-                                    <h3>Bebê reborn</h3>
-                                </figcaption>
-                            </figure>
-                            <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto2-280x170.jpg" alt="Imagem de um kit de artesanato">
-                                <figcaption>
-                                    <h3>Bebê reborn</h3>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="grid-6">
-                            <figure class="foto_produto media">
-                                <img src="img/produtos/produto-340x360.jpg" alt="Imagem de um bebê reborn">
-                                <figcaption>
-                                    <h3 class="tiutlo_produto">Artesanato</h3>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="grid-11">
-                            <figure class="foto_produto grande_larga">
-                                <img src="img/produtos/produto2-640x340.jpg" alt="Imagem de um kit artesanato">
-                                <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê reborn</h3>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="coluna segundaC">
-                        <div class="grid-5">
-                            <figure class="foto_produto grande_cumprida">
-                                <img src="img/produtos/produto2-280x530.jpg" alt="Imagem de um porta frauldas">
-                                <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê reborn</h3>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="grid-5">
-                            <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto-280x170.jpg" alt="Imagem de um bebê reborn">
-                                <figcaption>
-                                    <h3>Bebê reborn</h3>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+                <?php endwhile; endif; ?>
             </div>
             <div class="chamada_de_acao">
                 <p>Clique no botão para ir para ver mais trabalhos.</p>

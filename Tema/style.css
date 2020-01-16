@@ -12,7 +12,7 @@ Version: 1.0
 @import 'CSS/grid.css';
 @import 'CSS/contato.css';
 @import 'CSS/produtos.css';
-@import 'CSS/responsive.css';
+@import 'CSS/responsividade.css';
 
 /* Pré Formatação */
 body{
@@ -192,7 +192,7 @@ header .container>div{
 }
 
 .informacao{
-    height: 280px;
+    min-height: 280px;
     padding: 0 10px;
     background-color: rgba(190, 223, 238, 0.5);
     display: flex;
@@ -202,8 +202,8 @@ header .container>div{
 }
 
 .informacao_central{
-    height: 370px;
-    padding: 0 10px;
+    min-height: 370px;
+    padding: 0 10px 20px;
     background-color: rgba(190, 223, 238, 0.5);
     display: flex;
     flex-direction: column;
