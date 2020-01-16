@@ -12,9 +12,13 @@ Version: 1.0
 @import 'CSS/grid.css';
 @import 'CSS/contato.css';
 @import 'CSS/produtos.css';
-@import 'CSS/responsividade.css';
 
 /* Pré Formatação */
+
+.customize-support header{
+    margin-top: 32px;
+}
+
 body{
     margin: 0;
     font: 1em normal 'Amiri', serif;
@@ -466,6 +470,16 @@ footer>div:nth-child(2) p{
     align-items: center;
 }
 
+/* JavaScript Funções */
+
+.icone_produto{
+    display: none;
+}
+
+.icone_produto_ativo{
+    display: block;
+}
+
 /* JavaScript Slide */
 
 .js [data-slide]{
@@ -508,4 +522,4 @@ footer>div:nth-child(2) p{
 
 .js [data-slide-nav] > button.active {
     background: #E755F0;
-}  
+}

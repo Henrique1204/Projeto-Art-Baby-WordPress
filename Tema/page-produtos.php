@@ -179,7 +179,9 @@
                 </div>
                 <div class="grid-8 produto_pedido">
                     <div class="alinhar_centro">
-                        <img src="img/Ícones/sacola.svg" alt="sacola de compra" id="icone_produto_pedido">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/sacola.svg" alt="sacola de compra" class="icone_produto icone_produto_ativo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/babê.svg" alt="sacola de bebê" class="icone_produto">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/artesanato.svg" alt="sacola de artesanato" class="icone_produto">
                     </div>
                     <div>
                         <label for="bebe" class="texto_direita">Bebê reborn <input type="checkbox" name="produto" id="bebe"></label>
