@@ -9,29 +9,29 @@
             <div class="grid-4">
                 <h3>Redes sociais</h3>
                 <div class="links_sociais">
-                    <a>
-                        <img src="img/Ícones/facebook_icon.svg" alt="ícone Facebook">
+                    <a href="<?php the_field('link_facebook'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/facebook_icon.svg" alt="ícone Facebook">
                     </a>
-                    <a>
-                        <img src="img/Ícones/instagram_icon.svg" alt="ícone Facebook">
+                    <a href="<?php the_field('link_instagram'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/instagram_icon.svg" alt="ícone Facebook">
                     </a>
-                    <a>
-                        <img src="img/Ícones/twitter_icon.svg" alt="ícone Facebook">
+                    <a href="<?php the_field('link_twitter'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/twitter_icon.svg" alt="ícone Facebook">
                     </a>
                 </div>
             </div>
             <div class="grid-7">
                 <h3>Mapa</h3>
-                <img src="img/mapa.jpg" alt="Av. Primavera, 107 - Vargem Grande">
+                <a href="<?php the_field('link_mapa'); ?>"><img src="<?php the_field('imagem_endereco') ?>" alt="<?php the_field('alt_endereco') ?>"></a>
             </div>
             <div class="grid-5">
                 <h3>Contato</h3>
                 <ul>
-                    <li>Av. Primavera, 107</li>
-                    <Li> Vargem Grande</Li>
-                    <li> São Paulo, SP</li>
-                    <li> rita_seilaoq@gmail.com</li>
-                    <li> (11) 99999-9999</li>
+                    <li><?php the_field('rua'); ?></li>
+                    <li><?php the_field('bairro'); ?></li>
+                    <li><?php the_field('cidade_estado'); ?></li>
+                    <li><?php the_field('email'); ?></li>
+                    <li><?php the_field('telefone'); ?></li>
                 </ul>
             </div>
         </div>
