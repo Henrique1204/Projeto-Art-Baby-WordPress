@@ -10,35 +10,36 @@
                 <h2 class="titulo">Bebês Reborn</h2>
             </div>
             <div data-slide="produtos_produtos1">
+            <?php if(have_rows('imagens_portfolio_bebe')): while(have_rows('imagens_portfolio_bebe')): the_row(); ?>
                 <div class="container portfolio">
                     <div class="coluna primeiraC">
                         <div class="grid-5">
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto-280x170.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_um'); ?>" alt="<?php the_sub_field('alt_um'); ?>">
                                 <figcaption>
-                                    <h3>Bebê reborn</h3>
+                                    <h3><?php the_sub_field('nome_um'); ?></h3>
                                 </figcaption>
                             </figure>
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto-280x170.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_dois'); ?>" alt="<?php the_sub_field('alt_dois'); ?>">
                                 <figcaption>
-                                    <h3>Bebê reborn</h3>
+                                    <h3><?php the_sub_field('nome_dois'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-6">
                             <figure class="foto_produto media">
-                                <img src="img/produtos/produto-340x360.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_tres'); ?>" alt="<?php the_sub_field('alt_tres'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê rebonr</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_tres'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-11">
                             <figure class="foto_produto grande_larga">
-                                <img src="img/produtos/produto-640x340.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_quatro'); ?>" alt="<?php the_sub_field('alt_quatro'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê reborn</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_quatro'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
@@ -46,56 +47,58 @@
                     <div class="coluna segundaC">
                         <div class="grid-5">
                             <figure class="foto_produto grande_cumprida">
-                                <img src="img/produtos/produto-280x530.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_cinco'); ?>" alt="<?php the_sub_field('alt_cinco'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Bebê reborn</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_cinco'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-5">
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto-280x170.jpg" alt="Imagem de um bebê reborn">
+                                <img src="<?php the_sub_field('imagem_seis'); ?>" alt="<?php the_sub_field('alt_seis'); ?>">
                                 <figcaption>
-                                    <h3>Bebê reborn</h3>
+                                    <h3><?php the_sub_field('nome_seis'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
+                <?php endwhile; endif; ?>
             </div>
             <div>
                 <h2 class="titulo">Artesanato</h2>
             </div>
             <div data-slide="produtos_produtos2">
+            <?php if(have_rows('imagens_portfolio_artesanato')): while(have_rows('imagens_portfolio_artesanato')): the_row(); ?>
                 <div class="container portfolio">
                     <div class="coluna primeiraC">
                         <div class="grid-5">
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto2-280x170.jpg" alt="Imagem de um kit de artesanato">
+                                <img src="<?php the_sub_field('imagem_um'); ?>" alt="<?php the_sub_field('alt_um'); ?>">
                                 <figcaption>
-                                    <h3>Artesanato</h3>
+                                    <h3><?php the_sub_field('nome_um'); ?></h3>
                                 </figcaption>
                             </figure>
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto2-280x170.jpg" alt="Imagem de um kit de artesanato">
+                                <img src="<?php the_sub_field('imagem_dois'); ?>" alt="<?php the_sub_field('alt_dois'); ?>">
                                 <figcaption>
-                                    <h3>Artesanato</h3>
+                                    <h3><?php the_sub_field('nome_dois'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-6">
                             <figure class="foto_produto media">
-                                <img src="img/produtos/porduto2-340x360.jpg" alt="Imagem de um porta fraulda artesanal">
+                                <img src="<?php the_sub_field('imagem_tres'); ?>" alt="<?php the_sub_field('alt_tres'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Artesanato</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_tres'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-11">
                             <figure class="foto_produto grande_larga">
-                                <img src="img/produtos/produto2-640x340.jpg" alt="Imagem de um kit artesanato">
+                                <img src="<?php the_sub_field('imagem_quatro'); ?>" alt="<?php the_sub_field('alt_quatro'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Artesanato</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_quatro'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
@@ -103,61 +106,64 @@
                     <div class="coluna segundaC">
                         <div class="grid-5">
                             <figure class="foto_produto grande_cumprida">
-                                <img src="img/produtos/produto2-280x530.jpg" alt="Imagem de um kit artesanato">
+                                <img src="<?php the_sub_field('imagem_cinco'); ?>" alt="<?php the_sub_field('alt_cinco'); ?>">
                                 <figcaption>
-                                    <h3 class="tiutlo_produto">Artesanato</h3>
+                                    <h3 class="tiutlo_produto"><?php the_sub_field('nome_cinco'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="grid-5">
                             <figure class="foto_produto pequena">
-                                <img src="img/produtos/produto2-280x170.jpg" alt="Imagem de um kit de artesanato">
+                                <img src="<?php the_sub_field('imagem_seis'); ?>" alt="<?php the_sub_field('alt_seis'); ?>">
                                 <figcaption>
-                                    <h3>Artesanato</h3>
+                                    <h3><?php the_sub_field('nome_seis'); ?></h3>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
+                <?php endwhile; endif; ?>
             </div>
             <div>
                 <h2 class="titulo">Materiais</h2>
             </div>
             <div data-slide="materiais">
+                <?php if(have_rows('imagens_portfolio_materiais')): while(have_rows('imagens_portfolio_materiais')): the_row(); ?>
                 <div class="container materias">
                     <div class="material grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_um'); ?>" alt="<?php the_sub_field('alt_um'); ?>">
+                        <h3><?php the_sub_field('nome_um'); ?></h3>
                     </div>
                     <div class="material grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_dois'); ?>" alt="<?php the_sub_field('alt_dois'); ?>">
+                        <h3><?php the_sub_field('nome_dois'); ?></h3>
                     </div>
                     <div class="material grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_tres'); ?>" alt="<?php the_sub_field('alt_tres'); ?>">
+                        <h3><?php the_sub_field('nome_tres'); ?></h3>
                     </div>
                     <div class="material grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_quatro'); ?>" alt="<?php the_sub_field('alt_quatro'); ?>">
+                        <h3><?php the_sub_field('nome_quatro'); ?></h3>
                     </div>
                     <div class="material ultimos grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_cinco'); ?>" alt="<?php the_sub_field('alt_cinco'); ?>">
+                        <h3><?php the_sub_field('nome_cinco'); ?></h3>
                     </div>
                     <div class="material ultimos grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_seis'); ?>" alt="<?php the_sub_field('alt_seis'); ?>">
+                        <h3><?php the_sub_field('nome_seis'); ?></h3>
                     </div>
                     <div class="material ultimos grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_sete'); ?>" alt="<?php the_sub_field('alt_sete'); ?>">
+                        <h3><?php the_sub_field('nome_sete'); ?></h3>
                     </div>
                     <div class="material ultimos grid-4">
-                        <img src="img/material.jpg" alt="tinta pvc vermelha">
-                        <h3>Nome material</h3>
+                        <img src="<?php the_sub_field('imagem_oito'); ?>" alt="<?php the_sub_field('alt_oito'); ?>">
+                        <h3><?php the_sub_field('nome_oito'); ?></h3>
                     </div>
                 </div>
+                <?php endwhile; endif; ?>
             </div>
         </section>
         <section class="pedido">
