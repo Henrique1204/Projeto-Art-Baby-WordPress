@@ -22,11 +22,13 @@
                 </a>
             </div>
             <nav class="menu_navegacao">
-                <ul class="grid-10">
-                    <li><a href="/produtos" class="caminho_menu">Produtos</a></li>
-                    <li><a href="/contato" class="caminho_menu">Contato</a></li>
-                    <li><a href="/blog" class="caminho_menu">Blog</a></li>
-                </ul>
+                <?php $args = array(
+                    'menu' => 'principal',
+                    'theme_location' => 'menu-principal',
+                    'container' => false
+                    );
+                    wp_nav_menu($args);
+                ?>
             </nav>
         </div>
     </header>
