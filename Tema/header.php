@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+	<meta name="description" content="<?php bloginfo('name'); wp_title(' - '); the_field('descricao_seo'); ?>">
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="<?php bloginfo('name'); wp_title(' - '); the_field('titulo_seo'); ?>"/>
+	<meta property="og:description" content="<?php the_field('descricao_seo'); ?>"/>
+	<meta property="og:url" content="<?php bloginfo('url'); ?>"/>
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/og-artbaby.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Fonts -->
@@ -9,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
     <!-- Scripts-->
     <script>document.documentElement.classList.add('js')</script>
-    <title>Art baby - Bebês Reborn e Artesanato para enxoval</title>
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
+    <title><?php bloginfo('name'); wp_title(' | ');?> - <?php the_field('titulo_seo'); ?></title>
     <!-- Header WP -->
     <?php wp_head(); ?>
 </head>
