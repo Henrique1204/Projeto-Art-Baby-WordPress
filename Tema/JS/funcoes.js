@@ -1,6 +1,5 @@
 const img = document.getElementsByClassName('icone_produto');
 const check = document.getElementsByName("produto");
-const caminho = '<?php echo get_template_directory_uri(); ?>/';
 
 function sumir_img(){
     for(imgs of img){
@@ -21,9 +20,9 @@ function verificarCheckBox() {
     if(check[0].checked == true && check[1].checked == true || check[0].checked == false && check[1].checked == false){
         sumir_img();
         img[0].classList.add('icone_produto_ativo');
-    }
-}
+    };
+};
 
 for(let itens of check){
     itens.onclick = verificarCheckBox;
-}
+};

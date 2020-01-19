@@ -1,3 +1,5 @@
+/* Página Blog */
+
 .introducao_blog{
     max-width: 100vw;
     height: 130px;
@@ -6,4 +8,133 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.posts_blog{
+    min-height: 970px;
+    max-width: 100vw;
+    padding: 30px 0;
+}
+
+.posts_blog>.container{
+    flex-direction: column;
+}
+
+.data_post{
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+}
+
+.blog_post{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blog_post>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog_post>div>img{
+    width: 220px;
+    height: 220px;
+}
+
+.blog_post .conteudo_post{
+    width: 440px;
+    height: 100%;
+    padding: 20px 30px;
+    font-family: 'Amiri', serif;
+    text-align: center;
+    background-color: #BEDFEE;
+}
+
+.blog_post .btn_blog{
+    width: 40px;
+    height: 100%;
+    background: url('../img/ícones/efeito_btn_blog.svg') no-repeat center;
+    background-size: cover;
+}
+
+.blog_post .btn_blog:hover{
+    background: url('../img/ícones/efeito_btn_blog_branco.svg') no-repeat center;
+    background-size: cover;
+}
+
+/* POSTS */
+
+.intro_erro .titulo:after, .intro_erro .titulo:before{
+    display: none;
+}
+
+.conteudo_geral{
+    min-height: 820px;
+    padding: 30px 0;
+    flex-direction: column;
+}
+
+.conteudo_geral>*{
+    margin-top: 20px;
+}
+
+.conteudo_geral>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo_geral .img_post:nth-child(1){
+    height: 580px;
+}
+
+.conteudo_geral .img_post:nth-child(2){
+    height: 300px;
+    display: none;
+}
+
+.conteudo_geral .texto_post{
+    height: 580px;
+    padding: 20px;
+    font-family: 'Amiri', serif;
+    background-color: #5AC4FF;
+}
+
+.conteudo_geral .texto_post_opcional{
+    min-height: 200px;
+    padding: 20px;
+    font-family: 'Amiri', serif;
+    background-color: #5AC4FF;
+}
+
+.conteudo_geral .texto_post_opcional p{
+    margin-top: 20px;
+}
+
+.conteudo_geral>div:nth-last-child(1){
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo_geral .btn_voltar{
+    width: 120px;
+    height: 30px;
+    padding-top: 5px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: #5AC4FF;
+}
+
+.conteudo_geral .btn_voltar:hover{
+    color: #fff;
 }

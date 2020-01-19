@@ -52,3 +52,10 @@ function register_my_menu(){
 	register_nav_menu('menu-principal',__('Menu Principal'));
 }
 add_action('init', 'register_my_menu');
+
+// Formatar imagens responsivas
+function meus_tamanhos_personalizados(){
+	add_image_size('large', 580, 580, true);
+	add_image_size('medium', 300, 300, true);
+}
+add_action('after_setup_theme', 'meus_tamanhos_personalizados');
