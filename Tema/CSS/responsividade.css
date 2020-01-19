@@ -122,6 +122,10 @@
     /* Produtos Home */
 
     .segundaC{
+        width: 300px;
+    }
+
+    .primeiraC{
         display: none;
     }
 
@@ -194,6 +198,10 @@
 
     /* Página Contato */
 
+    .introducao_blog{
+        margin-top: 160px;
+    }
+
     .dados_contato .container>div{
         height: auto;
         margin: 15px 0;
@@ -201,5 +209,34 @@
 
     .enviar_mensagem form input, .enviar_mensagem textarea{
         width: 260px;
+    }
+
+    /* Página Blog */
+
+    .blog_post{
+        height: 70px;
+    }
+
+    .blog_post .post_desktop{
+        display: none;
+    }
+
+    .blog_post .post_smartphone{
+        display: inline-block;
+    }
+
+    /* Post */
+
+    .conteudo_geral>div:nth-child(1){
+        flex-direction: column;
+    }
+
+    .conteudo_geral .img_post:nth-child(1){
+        display: none;
+    }
+
+    .conteudo_geral .img_post:nth-child(2){
+        display: inline-block;
+        margin-bottom: 20px;
     }
 }

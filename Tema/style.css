@@ -240,6 +240,10 @@ header .container>div{
     flex-direction: column;
 }
 
+.produtos_home p{
+    text-align: center;
+}
+
 .coluna{
     min-height: 720px;
     display: flex;
