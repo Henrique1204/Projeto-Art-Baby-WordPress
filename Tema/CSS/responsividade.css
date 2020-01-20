@@ -61,7 +61,7 @@
 
     /* Post recentes */
 
-    .posts_recentes .ultimos{
+    .links_posts_recentes>a:nth-child(3), .links_posts_recentes>a:nth-child(4){
         display: none;
     }
 

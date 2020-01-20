@@ -42,6 +42,10 @@
     min-height: 540px;
 }
 
+.pedido form label, .pedido form input{
+    cursor: pointer;
+}
+
 .dados_pedidos{
     height: 430px;
     background: linear-gradient(135deg, #E755F0, #E755F0, #5AC4FF, #5AC4FF);

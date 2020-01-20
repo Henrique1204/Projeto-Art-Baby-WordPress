@@ -37,4 +37,32 @@
         </div>
     </section>
 <?php endif; ?>
+<section class="posts_recentes blog alinhar_centro">
+    <div class="container div_post">
+        <h2 class="titulo">Ultimos posts</h2>
+        <div class="container links_posts_recentes alinhar_centro">
+            <?php
+		        $args = array('post' => 'post', 'order' => 'DESC');
+			    $the_query = new WP_Query($args);
+		    ?>
+            <?php if($the_query->have_posts()): while($the_query->have_posts()): $the_query->the_post(); ?>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="post">
+                        <h3 class="titulo_post"><?php the_title(); ?></h3>
+                        <figure class="tumb">
+                            <img src="<?php the_field('thumbnail_post'); ?>" alt="Thumbnail do post">
+                            <figcaption>
+                                <h3><?php echo get_the_time('d/m/Y'); ?></h3>
+                            </figcaption>
+                        </figure>
+                        <div class="descricao_post">
+                            <p><?php the_field('resumo_post'); ?></p>
+                        </div>
+                    </div>
+                </a>
+            <?php endwhile; endif; ?>
+            <?php wp_reset_query(); wp_reset_postdata(); ?>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>
