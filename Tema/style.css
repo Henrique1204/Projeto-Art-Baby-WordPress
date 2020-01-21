@@ -520,3 +520,11 @@ footer>div:nth-child(2) p{
 .js [data-slide-nav] > button.active {
     background: #E755F0;
 }
+
+#form-sucesso {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}

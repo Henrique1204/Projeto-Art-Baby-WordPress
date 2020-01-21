@@ -9,7 +9,9 @@ function art_baby_scripts(){
 	//Rgistrar Plugin
 	wp_register_script('simple-slide', get_template_directory_uri().'/JS/simple-slide.js', array(), false, true);
 
-	wp_register_script('script', get_template_directory_uri().'/JS/script.js', array('simple-slide'), false, true);
+	wp_register_script('simple-form', get_template_directory_uri().'/JS/simple-form.js', array(), false, true);
+
+	wp_register_script('script', get_template_directory_uri().'/JS/script.js', array('simple-slide', 'simple-form'), false, true);
 	
 	wp_register_script('funcoes', get_template_directory_uri().'/JS/funcoes.js', array(), false, true);
     

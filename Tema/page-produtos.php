@@ -168,7 +168,7 @@
         </section>
         <section class="pedido">
             <h2 class="titulo" >Fazer pedido</h2>
-            <form class="container alinhar_centro">
+            <form method="post" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="container alinhar_centro form_php">
                 <div class="grid-8 dados_pedidos">
                     <div>
                         <label for="nome">Nome</label>
@@ -190,11 +190,11 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/Ícones/artesanato.svg" alt="sacola de artesanato" class="icone_produto">
                     </div>
                     <div>
-                        <label for="bebe" class="texto_direita">Bebê reborn <input type="checkbox" name="produto" id="bebe"></label>
-                        <label for="arte"><input type="checkbox" name="produto" id="arte"> Artesanato</label>
+                        <label for="bebe" class="texto_direita">Bebê reborn <input type="checkbox" name="produto" id="bebe" value="bebe"></label>
+                        <label for="arte"><input type="checkbox" name="produto" id="arte" value="arte"> Artesanato</label>
                     </div>
                 </div>
-                <button type="submit" class="btn">Fazer pedido</button>
+                <button type="submit" class="btn" id="enviar">Fazer pedido</button>
             </form>
         </section>
 <?php endwhile; endif; ?>

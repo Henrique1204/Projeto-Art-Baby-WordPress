@@ -39,7 +39,7 @@
     <section class="enviar_mensagem alinhar_centro">
         <div class="container">
             <h2 class="titulo">Enviar mensagem</h2>
-            <form class="grid-8">
+            <form method="post" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="grid-8 form_php">
                 <div>
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
@@ -54,9 +54,9 @@
                 </div>
                 <div>
                     <label for="msg">Mensagem</label>
-                    <textarea name="msg" id="msg"></textarea>
+                    <textarea name="msg" id="msg" required></textarea>
                 </div>
-                <button type="submit" class="btn rosa">Enviar</button>
+                <button type="submit" class="btn rosa" id="enviar">Enviar</button>
             </form>
         </div>
     </section>
