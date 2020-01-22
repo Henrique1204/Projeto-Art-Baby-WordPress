@@ -26,11 +26,8 @@ function art_baby_css(){
 	//Registrar css
     wp_register_style('art-baby-style', get_template_directory_uri().'/style.css', array(), false, false);
 
-	wp_register_style('art-baby-responsividade', get_template_directory_uri().'/CSS/responsividade.css', array(), false, false);
-
 	//Carregar css
     wp_enqueue_style('art-baby-style');
-    wp_enqueue_style('art-baby-responsividade');
 }
 add_action('wp_enqueue_scripts', 'art_baby_css');
 
